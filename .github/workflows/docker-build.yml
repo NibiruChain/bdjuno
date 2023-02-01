@@ -36,5 +36,3 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/nibiruchain/bdjuno:${{ steps.get_version.outputs.version-without-v }}
-          build-args: |
-            GIT_TOKEN=${{ secrets.NIBIBOT_GIT_TOKEN }}
